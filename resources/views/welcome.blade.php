@@ -1,28 +1,26 @@
 @include('navbar')
 
-<!-- Hero Section -->
-<div class="hero">
-   
-        <img src="{{asset('imgs/2.svg')}}" alt="Spice it up your brand" style="width: 100%; height: 100%;">
-    
+<!-- fullScreen -->
+<div class="fullScreen">
+    <img src="{{ asset('imgs/2.svg') }}" alt="Spice it up your brand" style="width: 100%; height: 100%;">
 </div>
 
-<!-- Collection Section -->
-<section id="collections">
+<!-- Services  -->
+<section id="services">
     <div class="title title-right">
         <span class="line line-right"></span>
         <h2>Nuestros pilares</h2>
     </div>
     <div class="wrapper">
-        <a class="box box1" href="{{route('pilares')}}/#featured">
+        <a class="box box1" href="{{ route('pilares') }}/#featured">
             <h3>Branding y diseño gráfico </h3>
             <div class="box-overlay"></div>
         </a>
-        <a class="box box2" href="{{route('pilares')}}/#featuredOrange">
+        <a class="box box2" href="{{ route('pilares') }}/#featuredOrange">
             <h3>Marketing digital y servicios web</h3>
             <div class="box-overlay"></div>
         </a>
-        <a class="box box3" href="{{route('pilares')}}/#featuredGray">
+        <a class="box box3" href="{{ route('pilares') }}/#featuredGray">
             <h3>Impresión y promocionales</h3>
             <div class="box-overlay"></div>
         </a>
@@ -34,14 +32,13 @@
     </div>
 </section>
 
-<!-- Featured Section -->
-<section id="featured">
+<section id="welcome">
     <div class="title title-left" style="margin-top:50px">
         <span class="line"></span>
         <h3>Expandiendo Horizontes Comerciales en el Mundo Virtual</h3>
     </div>
     <div class="wrapper">
-        
+
         <div class="text">
             <h2>Tener presencia en internet se ha vuelto crucial para el éxito comercial. </h2>
             <p>Nuestro enfoque en el desarrollo de E-commerce y marketplaces se convierte
@@ -51,7 +48,7 @@
             <a href="#" class="btn submitOrange">Quiero innovar en línea!</a>
         </div>
         <div class="text">
-            <img src="{{asset('imgs/4.svg')}}" alt="" style="width: 100%; height: Auto;">
+            <img src="{{ asset('imgs/4.svg') }}" alt="" style="width: 100%; height: Auto;">
         </div>
     </div>
 </section>
@@ -59,14 +56,14 @@
 
 
 
-<!-- About Section -->
-<section id="about">
+<!-- clients  -->
+<section id="clients">
     <div class="title title-right">
         <h3>Algunos de nuestros clientes</h3><span class="line"></span>
     </div>
     <div class="wrapper">
         <div class="video-wrapper">
-            <img src="{{asset('imgs/clients.png')}}" alt="">
+            <img src="{{ asset('imgs/clients.png') }}" alt="">
         </div>
         <div class="text">
             <p>Contamos con una sólida relación con clientes que nos han
@@ -83,4 +80,3 @@
 </section>
 
 @include('footer')
-

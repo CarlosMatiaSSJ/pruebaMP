@@ -1,7 +1,7 @@
 @include('navbar')
 
 <!-- Branding/DG Section -->
-<section id="featured">
+<section id="branding">
     <div class="wrapper">
         <div class="text">
             <h1>Branding </h1>
@@ -39,7 +39,7 @@
                 lograr un objetivo determinado.</h3>
             <p>Especialización:</p>
 
-            <ul class="orange-circle-list">
+            <ul class="green-circle-list">
                 <h3>
                     <li>Diseño publicitario</li>
                 </h3>
@@ -57,11 +57,12 @@
         </div>
 
     </div>
-    <a href="#" class="btn submitOrange">Quiero innovar en línea!</a>
+    <a href="{{route('quienesSomos')}}/#DG" class="btn submitOrange">Quiero innovar en línea!</a>
+
 </section>
 
 <!-- Posicionamiento/MArketing Section -->
-<section id="featuredOrange">
+<section id="marketing">
     <div class="wrapper">
         <div class="text">
             <h1>Posicionamiento Web </h1>
@@ -123,13 +124,13 @@
         </div>
 
     </div>
-    <a href="#" class="btn submitGreen">Quiero innovar en línea!</a>
+    <a href="{{route('quienesSomos')}}/#marketing" class="btn submitGreen">Quiero innovar en línea!</a>
 
 </section>
 
 
 <!-- Impresión/Promocionales Section -->
-<section id="featuredGray">
+<section id="branding">
     <div class="wrapper">
         <div class="text">
             <h1>Impresión </h1>
@@ -193,7 +194,7 @@
         </div>
 
     </div>
-    <a href="#" class="btn submitOrange">Quiero innovar en línea!</a>
+    <a href="{{route('quienesSomos')}}/#publicidad" class="btn submitOrange">Quiero innovar en línea!</a>
 
 </section>
 

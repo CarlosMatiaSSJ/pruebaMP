@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('/pilares', function () {
     return view('pilares');
 })->name('pilares');
+
+Route::get('/sobre-nosotros', function () {
+    return view('quienesSomos');
+})->name('quienesSomos');
+
